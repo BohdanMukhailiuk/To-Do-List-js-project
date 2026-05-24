@@ -1,4 +1,4 @@
-@import url('./globals.css');
+@import './globals.css';
 
-@import url('./usersPanel.css');
-@import url('./tasksPanel.css');
+@import './usersPanel.css';
+@import './tasksPanel.css';
