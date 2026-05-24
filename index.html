@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="users_panel">
+            <h2>USERS</h2>
+            <input type="text" class="user_input" id="user-input" placeholder="Enter user name">
+            <div class="users_list" id="users-list"></div>
+        </div>
+        <div class="tasks_panel">
+            <h1>TODO LIST</h1>
+            <div class="input_container">
+                <input type="text" id="task-input" placeholder="Enter task">
+            </div>
+            <div class="task_board"">
+                <h2>TASKS</h2>
+                <div class=" tasks_list" id="tasks-list"> </div>
+        </div>
+        <div class="completed_tasks" id="completed-tasks">
+            <h2>COMPLETED TASKS</h2>
+            <div class="completed_tasks_list" id="completed-tasks-list"></div>
+        </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
