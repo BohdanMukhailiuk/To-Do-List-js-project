@@ -1,0 +1,105 @@
+.users_panel {
+    width: 450px;
+    min-width: 250px;
+    height: 80vh;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.users_panel h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.user_input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.user_input:focus {
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+.users_list {
+    margin-top: 20px;
+    overflow-y: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.user_content {
+    cursor: pointer;
+    flex: 1;
+}
+
+.user_content:hover {
+    text-decoration: underline;
+}
+
+.user:hover {
+    background: #dddddd;
+}
+
+.active {
+    background: #4f46e5;
+    color: white;
+}
+
+.user_name {
+    font-size: 15px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.user_actions {
+    display: flex;
+    gap: 8px;
+}
+
+.icon_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.icon_btn.edit_user_btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.icon_btn.delete_user_btn {
+    background-color: #f44336;
+    color: white;
+}

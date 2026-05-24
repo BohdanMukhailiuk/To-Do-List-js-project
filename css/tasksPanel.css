@@ -1,0 +1,112 @@
+.tasks_panel {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    min-height: 80vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tasks_panel h1 {
+    margin-bottom: 20px;
+}
+
+.input_container {
+    margin-bottom: 30px;
+}
+
+.task_board,
+.completed_tasks {
+    background: #f1f1f1;
+    border-radius: 16px;
+    padding: 20px;
+    height: 295px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.08);
+}
+
+.task_board h2,
+.completed_tasks h2 {
+    margin-bottom: 15px;
+    flex-shrink: 0;
+}
+
+.task {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: #bdbaba;
+    padding: 15px;
+    border-radius: 12px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.tasks_list,
+.completed_tasks_list {
+    overflow-y: auto;
+    flex: 1;
+    padding-right: 5px;
+}
+
+.task_info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    min-width: 0;
+}
+
+.task_check {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: #4f4635;
+}
+
+.task_text {
+    font-size: 18px;
+    word-break: break-word;
+}
+
+.hidden {
+    display: none;
+}
+
+.task_edit_input {
+    width: 100%;
+    max-width: 500px;
+    height: 35px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.task_actions {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.edit {
+    background: #4CAF50;
+    color: white;
+}
+
+.delete {
+    background: #f44336;
+    color: white;
+}
+
+.completed_tasks {
+    margin-top: 40px;
+}
